@@ -36,7 +36,7 @@ void quickSort(int *v, int esq, int dir) {
   }
 }
 
-void bucketSort(int v[], int n) {
+void bucketSort(int *v, int n) {
 
   int max_val = v[0];
   int min_val = v[0];
@@ -50,7 +50,7 @@ void bucketSort(int v[], int n) {
     }
   }
 
-  int num_buckets = n;
+  int num_buckets = 10;
 
   int buckets[num_buckets][n];
   int bucket_counts[num_buckets];
